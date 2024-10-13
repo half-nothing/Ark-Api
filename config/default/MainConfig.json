@@ -1,0 +1,15 @@
+{
+    "configVersion": "1.0.0",
+    "https": {
+        "enable": false,
+        "enableHSTS": false,
+        "keyPath": "certificate/certificate.key",
+        "crtPath": "certificate/certificate.crt"
+    },
+    "callLimit": {
+        "count": 100,
+        "time": 1000
+    },
+    "homePage": "https://www.baidu.com",
+    "port": 80
+}
