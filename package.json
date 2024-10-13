@@ -1,0 +1,51 @@
+{
+    "name": "ark-api",
+    "version": "1.0.0",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "start": "node dist/main.js",
+        "start:build": "tsc -p . && node dist/main.js",
+        "update": "git checkout main && git pull && npm run start:build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/half-nothing/Ark-Api.git"
+    },
+    "keywords": [
+        "express",
+        "typescript",
+        "arknights",
+        "arkpets"
+    ],
+    "author": "Half_nothing",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/half-nothing/Ark-Api/issues"
+    },
+    "homepage": "https://github.com/half-nothing/Ark-Api#readme",
+    "description": "",
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/lodash": "^4.17.10",
+        "@types/module-alias": "^2.0.4",
+        "@types/node": "^22.7.5",
+        "typescript": "^5.6.3"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.1",
+        "lodash": "^4.17.21",
+        "log4js": "^6.9.1",
+        "module-alias": "^2.2.3"
+    },
+    "engines": {
+        "node": ">=20"
+    },
+    "_moduleAliases": {
+        "@": "dist",
+        "@config": "config",
+        "@cache": "cache"
+    }
+}
